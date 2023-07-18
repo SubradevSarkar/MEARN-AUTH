@@ -28,12 +28,12 @@ jobs:
         
     - name: Install backend dependencies
     - run: npm ci
-    - name: Install frontend dependencies
+#     - name: Install frontend dependencies
 #         working-directory: ./frontend
 #         run: npm ci
         
     - run: npm run build --if-present
     - name: Run backend
     - run: npm start
-    - name: Build
-    - run: npm run build
+#     - name: Build
+#     - run: npm run build
